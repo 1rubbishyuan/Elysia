@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:id="@+id/no_result_image"
+            android:src="@drawable/anxiang"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:layout_below="@id/no_result_image"
+            android:id="@+id/no_result1"
+            android:layout_width="match_parent"
+            android:text="暂无此类结果"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/smart_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   >
+                </androidx.recyclerview.widget.RecyclerView>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <!--    android:background="#E7CAF1">-->
+</RelativeLayout>

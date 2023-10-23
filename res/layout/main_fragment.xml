@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E7CAF1"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/searchView"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="10dp"
+            android:hint="搜索"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:text=""
+            />
+
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/search_view"-->
+<!--            android:layout_width="350dp"-->
+
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/white"-->
+<!--            android:inputType="text"-->
+<!--            app:iconifiedByDefault="false"-->
+<!--            app:queryHint="搜索" />-->
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/category_viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/category_linearout"
+        >
+    </androidx.viewpager2.widget.ViewPager2>
+    <LinearLayout
+        android:id="@+id/category_linearout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/main_toolbar"
+        android:layout_height="40dp">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/category_tablayout"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            app:tabTextColor="@color/black"
+
+            android:layout_height="40dp">
+
+        </com.google.android.material.tabs.TabLayout>
+        <ImageButton
+            android:id="@+id/unfold_category"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/menu"
+            android:background="@color/white"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

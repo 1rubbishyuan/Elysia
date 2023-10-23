@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF3FF"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/result_toolbar"
+        android:layout_width="match_parent"
+        android:background="#E7CAF1"
+        android:layout_height="60dp">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="True"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:fontFamily="@font/mtrue"
+            />
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_height="130dp"
+        android:src="@drawable/keyin"
+        />
+    <TextView
+        android:background="#F3E6E6"
+        android:layout_width="wrap_content"
+        android:hint="个性签名"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/avatar"
+        android:id="@+id/show_slogan"
+        />
+    <LinearLayout
+
+        android:id="@+id/personal_signature"
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="300dp">
+    <TextView
+
+        android:background="@drawable/private_info_button"
+        android:id="@+id/history"
+        android:layout_height="0dp"
+        android:drawableLeft="@drawable/history"
+        android:text="历史记录"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+        <TextView
+            android:background="@drawable/private_info_button"
+            android:id="@+id/star"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="收藏"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/save"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:background="@drawable/private_info_button"
+            android:id="@+id/private_info"
+            android:layout_height="0dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="个人信息"
+            android:drawableLeft="@drawable/info"
+            android:layout_weight="1"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:background="@drawable/private_info_button"
+            android:id="@+id/setting"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="清理缓存"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/setting"
+            android:layout_width="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

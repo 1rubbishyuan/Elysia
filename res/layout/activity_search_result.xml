@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResultActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/result_toolbar"
+        android:layout_width="match_parent"
+        android:background="#E7CAF1"
+        android:layout_height="60dp">
+        <!--会放置一些按钮之类的东西-->
+        <ImageView
+            android:id="@+id/back1"
+            android:src="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="搜索结果"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+<TextView
+    android:id="@+id/no_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="没有相关结果"
+    android:gravity="center"
+    android:layout_below="@id/result_toolbar"
+    android:textSize="20sp"
+    />
+
+<LinearLayout
+    android:layout_below="@id/result_toolbar"
+    android:id="@+id/search_result_linearLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+
+
+</RelativeLayout>

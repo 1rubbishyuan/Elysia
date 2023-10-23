@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LocalPageActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/local_toolbar"
+        android:layout_width="match_parent"
+        android:background="#E7CAF1"
+        android:layout_height="60dp">
+        <!--会放置一些按钮之类的东西-->
+        <ImageView
+            android:id="@+id/back2"
+            android:src="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="True"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:fontFamily="@font/mtrue"
+            >
+
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_below="@id/local_toolbar"
+        android:id="@+id/local_recyclerView"
+        android:layout_width="match_parent"
+        android:background="@drawable/start"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

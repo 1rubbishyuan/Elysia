@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:id="@+id/bottomSheetLayout"
+    android:orientation="vertical"
+    android:background="#D0FFD4F8"
+    android:padding="10dp"
+>
+    <ImageButton
+        android:id="@+id/sure_for_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:src="@drawable/ok"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/bottom_sheet_recyclerView"
+        />
+    <TextView
+        android:id="@+id/start_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="开始编辑"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="#D899DF"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/bottom_sheet_recyclerView"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/bottom_sheet_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
